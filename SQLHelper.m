@@ -11,7 +11,7 @@ int sqlhelper_query_callback(void *ctx, int argc, char **argv, char **columns);
 
 int sqlhelper_query_callback(void *ctx, int argc, char **argv, char **columns)
 {
-	NSMutableArray *ar = (NSMutableArray *)ctx;
+	NSMutableArray *ar = ctx;
 	NSMutableDictionary *row = [[NSMutableDictionary alloc] init];
 	for (int i = 0; i < argc; i++)
 	{
